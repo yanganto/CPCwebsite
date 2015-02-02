@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta http-equiv="content-type" content="text/html; charset=big5">
+
+<title>CPC::科技部化學推動中心</title>
+
+<link href="Css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.js"></script>		
+<script type="text/javascript" charset="utf-8" src="Scripts/jquery.corner.js"></script>		
+<script type="text/javascript" charset="utf-8" src="Scripts/index.js"></script>		
+<script type="text/javascript" charset="utf-8" src="Scripts/minwt.auto_full_height.mini.js"></script>		
+</head>
+
+<body>
+<div none="true">
+	<div class=top-out _height="none">
+		<div class=top >
+			<a href="index.htm"><img align="left" id=logo src="Figures/logo.png"></a>
+			<div id=title>
+				<h1>科技部化學推動中心</h1>
+				<h2>Chemistry  Promotion Center</h2>
+			</div>
+		</div>
+	</div>
+	
+	<div class=nav _height="none">
+			<div class=tab-panels>
+				<li rel="panel" class="btn" linkTo='News/news.htm'>&nbsp;&nbsp;最新消息&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='Introduction/introduction.htm'>&nbsp;&nbsp;中心介紹&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='member/member.htm'>&nbsp;&nbsp;中心成員&nbsp;&nbsp;</li>
+				<li rel="supPanel" class="btn" linkTo='panel4'>&nbsp;&nbsp;學術活動&nbsp;&nbsp;</li>
+				<li rel="supPanel"class="btn" linkTo='panel5'>&nbsp;&nbsp;出版刊物&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='Academic/group_01_natural_chem/group_01_index.htm'>&nbsp;&nbsp;學術小組&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='Course/course.htm'>&nbsp;&nbsp;學門規劃&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='Form/form.htm'>&nbsp;&nbsp;各項表格&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='Link/link.htm'>&nbsp;&nbsp;相關連結&nbsp;&nbsp;</li>
+				<li rel="panel" class="btn" linkTo='English/english.htm'>&nbsp;&nbsp;English&nbsp;&nbsp;</li>
+			</div>
+			<div class=hr>
+				<hr color="#31478D" size="3">
+			</div>
+			<div class="panels" id="panel4">
+				<li class="btn" rel='subPanel' linkTo='Activity/seminar_web/seminar.htm'>&nbsp;&nbsp;研討會及研習會&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Activity/visit_web/visit_center_table.htm'>&nbsp;&nbsp;中心訪問教授&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Activity/visit_web/visit_short_table.htm'>&nbsp;&nbsp;科技部短期訪問教授&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Activity/lecture_web/lecture.htm'>&nbsp;&nbsp;演講公告&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Activity/photo_web/photo.htm'>&nbsp;&nbsp;活動花絮&nbsp;&nbsp;</li>
+			</div>
+			<div class="panels" id="panel5">
+				<li class="btn" rel='subPanel' linkTo='Publish/jcomm_web/jcomm.htm'>&nbsp;&nbsp;中心通訊&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Publish/jgreen_web/jgreen.htm'>&nbsp;&nbsp;綠色永續化學通訊&nbsp;&nbsp;</li>
+				<li class="btn" rel='subPanel' linkTo='Publish/rese_contact_web/unvier_contact.htm'>&nbsp;&nbsp;研究人員通訊錄&nbsp;&nbsp;</li>
+			</div>
+	</div>
+	<div class=content-out _height="auto">
+		<div class=content >
+				<iframe class=content-if src="homepage.htm" frameborder="0" scrolling="auto">
+			</iframe> 
+		</div>
+	</div>
+	<div class=footer _height="none">
+		<p align="center">
+			Copyright &copy; 2015&nbsp;&nbsp;科技部自然司化學推動中心&nbsp;&nbsp;Chemistry Promotion Center
+		</p>
+	</div>
+	<script type="text/javascript" >
+		Initial();
+		$( document ).ready(function(){ $('#title').slideDown(500, function(){
+				$('.tab-panels').slideDown(500, function(){
+					$('.hr').show();
+					$('.content-if').show(2000);
+					//$('.content-if').attr("scrolling", "auto" );
+				});
+			});
+		});
+		$(function() {
+			$('.btn').on('click', function(){
+				if($(this).attr('rel') == 'panel'){
+					$('.btnactive').css("color", "#31478D");
+					$('.btnactive').removeClass('active');
+					$('.panels').hide();
+					$(this).addClass('btnactive');
+					$(this).css("color", "#FFFFFF");
+					Select($(this).attr('linkTo'));
+				} else if($(this).attr('rel') == 'supPanel'){
+					$('.btnactive').css("color", "#31478D");
+					$('.btnactive').removeClass('active');
+					$('.panels').hide();
+					$(this).addClass('btnactive');
+					$(this).css("color", "#FFFFFF");
+					$('#'+$(this).attr('linkTo')).slideDown(300);
+				}else{
+					$('.panels li').css("color", "#31478D");
+					$(this).addClass('btnactive');
+					$(this).css("color", "#FFFFFF");
+					Select($(this).attr('linkTo'));
+				}
+			});
+		});
+	</script>
+</div>
+</body>
+
+</html>
+

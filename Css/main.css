@@ -1,0 +1,161 @@
+* { 
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+
+
+body{
+	background:#DDDDDD;
+	text-align: center;
+	min-width: 1152px; 
+	/*1152 x 800 is the minimum require
+	  however 1024 * 600 is also aceptable
+	*/
+}
+
+.top-out{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 3px 5px 10px 5px;
+	background:#31478D;
+}
+.top{
+
+	background:#FFFFFF;
+	height:100px;
+	text-align:left;
+	line-height:50px;
+	font-weight:bold;
+	
+}
+
+#logo{
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 100px;
+	border:0;
+}
+
+#title{
+	margin-right: 5%; 
+	height: 100px; 
+	display:none;
+}
+
+.nav{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background:#44A2FF;
+	height:50px;
+	border:0;
+}
+
+
+.hr{
+	background:#2280DD;
+	display:none;
+	border:0;
+	margin-top:0%;
+	margin-bottom:0%;
+	padding: 0px;
+}
+
+hr{
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-top:0%;
+	margin-bottom:0%;
+	padding: 0px;
+}
+
+
+.tab-panels{
+	height: 48%;
+	display:none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.tab-panels li{
+	color: #31478D;
+	display: inline;
+	font-size:18px;
+	text-decoration:none;
+}
+a{
+	text-decoration:none;
+	color: #31478D;
+	font-weight:normal;
+	font-size:18px;
+}
+
+
+.tab-panels li .active{
+	color: #FFFFFF;
+}
+.tab-panels li:hover{
+	font-weight:bold;
+	text-decoration:underline;	
+	cursor: pointer;
+}
+
+
+.panels{
+	margin-top: 0px;
+	padding-bottom: 0px;
+	display:none;
+}
+
+.panels li{
+	color: #31478D;
+	display: inline;
+	font-size:18px;
+	text-decoration:none;
+}
+.panels li:hover{
+	font-weight:bold;
+	text-decoration:underline;
+	cursor: pointer;
+}
+.content-out{
+	padding:  10px 5px 0px 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background:#31478D;
+}
+.content{
+	background:#FFFFFF;
+	width: 100%;
+	height:100%; 
+	min-height: 370px;
+
+}
+.content-if{
+	margin-top: 12px;
+	margin-bottom: 12px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background:#FFFFFF;
+	width: 90%;
+	height:90%;
+	min-height: 366px;
+	display: none;
+}
+.footer{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background:#31478D;
+	height:20px;
+	font-size: 12px;
+	color:#FFFFFF;
+}
