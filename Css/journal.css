@@ -1,0 +1,29 @@
+.pic{ 
+	position:fixed;
+	left:0;
+	overflow:hidden;
+	height:100%;
+	width:300px;
+}
+.content{
+	margin-left: 310px;
+	
+}
+em{
+	clear: both;
+	color: #44A2FF;
+}
+
+em:hover{
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+hr {
+	margin-left:1%;
+	margin-right:1%;
+	height:1px;
+	color: #963;
+	background-color: #963;
+}
